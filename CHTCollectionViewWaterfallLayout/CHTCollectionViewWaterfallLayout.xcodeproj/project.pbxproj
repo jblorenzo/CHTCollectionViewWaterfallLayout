@@ -7,17 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30CCE20D1C9A8F7500429C17 /* CHTCollectionViewWaterfallLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CCE20C1C9A8F7500429C17 /* CHTCollectionViewWaterfallLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30CCE2161C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CCE2141C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30CCE2171C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CCE2151C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.m */; };
+		52B91FA71D8807C100EAD2E6 /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B91FA61D8807C100EAD2E6 /* CHTCollectionViewWaterfallLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30CCE2091C9A8F7500429C17 /* CHTCollectionViewWaterfallLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHTCollectionViewWaterfallLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		30CCE20C1C9A8F7500429C17 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
 		30CCE20E1C9A8F7500429C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30CCE2141C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHTCollectionViewWaterfallLayout.h; path = ../../CHTCollectionViewWaterfallLayout.h; sourceTree = "<group>"; };
-		30CCE2151C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHTCollectionViewWaterfallLayout.m; path = ../../CHTCollectionViewWaterfallLayout.m; sourceTree = "<group>"; };
+		52B91FA61D8807C100EAD2E6 /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CHTCollectionViewWaterfallLayout.swift; path = ../../CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +46,7 @@
 		30CCE20B1C9A8F7500429C17 /* CHTCollectionViewWaterfallLayout */ = {
 			isa = PBXGroup;
 			children = (
-				30CCE2141C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.h */,
-				30CCE2151C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.m */,
-				30CCE20C1C9A8F7500429C17 /* CHTCollectionViewWaterfallLayout.h */,
+				52B91FA61D8807C100EAD2E6 /* CHTCollectionViewWaterfallLayout.swift */,
 				30CCE20E1C9A8F7500429C17 /* Info.plist */,
 			);
 			path = CHTCollectionViewWaterfallLayout;
@@ -65,8 +59,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30CCE2161C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.h in Headers */,
-				30CCE20D1C9A8F7500429C17 /* CHTCollectionViewWaterfallLayout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +89,7 @@
 		30CCE2001C9A8F7500429C17 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				TargetAttributes = {
 					30CCE2081C9A8F7500429C17 = {
@@ -136,7 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30CCE2171C9A8F7E00429C17 /* CHTCollectionViewWaterfallLayout.m in Sources */,
+				52B91FA71D8807C100EAD2E6 /* CHTCollectionViewWaterfallLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +227,7 @@
 		30CCE2121C9A8F7500429C17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -244,12 +238,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.magnus.CHTCollectionViewWaterfallLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		30CCE2131C9A8F7500429C17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -282,6 +278,7 @@
 				30CCE2131C9A8F7500429C17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
